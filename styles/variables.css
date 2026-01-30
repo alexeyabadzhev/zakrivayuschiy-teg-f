@@ -1,1 +1,18 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --main-family: Inter-Variable, sans;
+  --accent-family: PressStart2P, sans;
+  --weight-header: 715;
+  --weight-text: 410;
+  --section-bg: #fff;
+  --background-gradient:
+    repeating-linear-gradient(to right, #d3d3d3 0 2px, rgba(211, 211, 211, 0) 2px 4px),
+    repeating-linear-gradient(#d3d3d3 0 2px, rgba(211, 211, 211, 0) 2px 4px),
+    linear-gradient(#e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+  --section-width: clamp(375px, 100%, 700px);
+  --outline-border: 2px solid #000;
+  --main-font-size: 18px;
+  --logo-font-size: clamp(49px, 32.32px + 2.27vw, 65px);
+  --title-font-size: clamp(14px, 4.62px + 1.28vw, 23px);
+  --label-shadow: 1px 0 rgba(255, 255, 255, 0.3), 0 1px rgba(255, 255, 255, 0.3), -1px 0 rgba(255, 255, 255, 0.3), 0 -1px rgba(255, 255, 255, 0.3);
+  --label-stroke: 1px rgba(255, 255, 255, 0.4);
+}
