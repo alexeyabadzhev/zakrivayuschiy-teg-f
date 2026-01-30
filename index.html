@@ -430,7 +430,7 @@
             </div>
           </li>
         </ul>
-        <button class="button__save">
+        <button onclick="window['save'].showModal()" aria-controls="save" class="button__save">
           <svg class="button__save-icon">
             <use href="./svg/floppy.svg#floppy"></use>
           </svg>
@@ -438,6 +438,17 @@
         </button>
       </section>
     </main>
+    <dialog class="dialog" id="save">
+      <div class="dialog-content">
+        <svg class="dialog-icon">
+          <use href="./svg/floppy.svg#floppy"></use>
+        </svg>
+        <p class="dialog-text">Вставьте<br>дискету, чтобы<br>продолжить</p>
+      </div>
+      <button class="dialog-button">
+        <span lang="em" class="dialog-text">ok</span>
+      </button>
+    </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

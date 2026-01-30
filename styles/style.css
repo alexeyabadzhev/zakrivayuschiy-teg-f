@@ -163,3 +163,36 @@
   aspect-ratio: 1 / 1;
   margin-inline-end: 8px;
 }
+
+.dialog {
+  padding-block: 30px;
+  padding-inline: 30px;
+  border: var(--outline-border);
+}
+
+.dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.dialog[open] .dialog-content {
+  display: flex;
+  gap: 20px;
+  margin-block-end: 30px;
+}
+
+.dialog-icon {
+  inline-size: 39px;
+  aspect-ratio: 1 / 1;
+}
+
+.dialog-text {
+  font-family: var(--accent-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.dialog-button {
+  border: var(--outline-border);
+}
