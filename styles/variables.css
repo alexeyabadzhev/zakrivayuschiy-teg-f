@@ -3,6 +3,8 @@
   --accent-family: PressStart2P, sans;
   --weight-header: 715;
   --weight-text: 410;
+  --heart-accent-color: #FF0000;
+  --dark-color: #000;
   --section-bg: #fff;
   --background-gradient:
     repeating-linear-gradient(to right, #d3d3d3 0 2px, rgba(211, 211, 211, 0) 2px 4px),
