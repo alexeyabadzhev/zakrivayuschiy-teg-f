@@ -1,29 +1,16 @@
-/* Здесь вы напишете основную часть стилей страницы.
-
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
-
-*/
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--main-family);
+  font-family: var(--main-family), sans-serif;
   font-variation-settings: "wght" var(--weight-text);
-  background-image: var(--background-gradient);
-  background-size: cover;
-  background-attachment: fixed;
+  background: var(--background-gradient) 0 0 / cover fixed #fff;
   padding-inline: clamp(0px, -385.74px + 52.48vw, 370px);
   padding-block: 100px;
 }
 
 .section-width {
   inline-size: var(--section-width);
+  margin-inline: auto;
 }
 
 .header {
@@ -72,7 +59,7 @@
 }
 
 .card__title {
-  font-variation-settings: var(--weight-header);
+  font-variation-settings: "wght" var(--weight-header);
   font-size: inherit;
   padding-inline: 10px;
   padding-block: 4px;
@@ -154,7 +141,6 @@
 }
 
 .card__text {
-  font-variation-settings: var(--weight-text);
   line-height: 1.17;
 }
 
@@ -163,13 +149,21 @@
   justify-content: end;
   margin-inline-end: 25px;
   margin-block-end: 25px;
+  gap: 7px;
+}
+
+@media (width <= 375px) {
+  .card__buttons {
+    gap: 5px;
+  }
 }
 
 .card__icon-button {
   background-color: transparent;
   border: 2px solid rgba(0, 0, 0, 0);
-  display: grid;
-  align-content: center;
+  display: flex;
+  block-size: 38px;
+  padding: 0;
   transition: border 0.3s ease;
 }
 
@@ -183,6 +177,10 @@
 
 .card__icon-button:focus-visible {
   border: 2px solid rgba(0, 0, 0, 1);
+}
+
+.like-icon {
+  margin: auto;
 }
 
 .core {
@@ -287,7 +285,7 @@
 
 .card__like-button {
   min-inline-size: 130px;
-  max-block-size: 38px;
+  min-block-size: 38px;
 }
 
 .button__text {
@@ -301,17 +299,9 @@
 
 .button__save {
   padding-inline: 18px;
-  padding-block: 18.5px;
-}
-
-@media (width <= 375px) {
-  .button__save {
-    display: flex;
-    flex-direction: column;
-    row-gap: 8px;
-    align-items: center;
-    padding-block: 15px;
-  }
+  padding-block: 15px;
+  display: flex;
+  align-items: center;
 }
 
 .button__save .button__text {
@@ -324,6 +314,21 @@
   margin-inline-end: 8px;
   mix-blend-mode: difference;
   stroke: var(--section-bg);
+}
+
+@media (width <= 375px) {
+  .button__save {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    align-items: center;
+    padding-block: 15px;
+  }
+
+  .button__save-icon {
+    margin-inline-end: initial;
+    inline-size: 26px;
+  }
 }
 
 .dialog {
@@ -345,11 +350,12 @@
 .dialog[open] .dialog__content {
   display: flex;
   gap: 20px;
+  max-inline-size: 293px;
   margin-block-end: 30px;
 }
 
 .dialog__icon {
-  inline-size: 39px;
+  inline-size: 80px;
   aspect-ratio: 1 / 1;
 }
 

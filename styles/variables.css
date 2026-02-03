@@ -1,9 +1,9 @@
 :root {
-  --main-family: Inter-Variable, sans;
-  --accent-family: PressStart2P, sans;
-  --weight-header: 'wght' 715;
-  --weight-text: 'wght' 410;
-  --heart-accent-color: #FF0000;
+  --main-family: Inter-Variable, sans-serif;
+  --accent-family: PressStart2P, fantasy;
+  --weight-header: 715;
+  --weight-text: 410;
+  --heart-accent-color: #ff0000;
   --dark-color: #000;
   --section-bg: #fff;
   --background-gradient:
@@ -15,6 +15,8 @@
   --main-font-size: 18px;
   --logo-font-size: clamp(49px, 32.32px + 2.27vw, 65px);
   --title-font-size: clamp(14px, 4.62px + 1.28vw, 23px);
-  --label-shadow: 1px 0 rgba(255, 255, 255, 0.3), 0 1px rgba(255, 255, 255, 0.3), -1px 0 rgba(255, 255, 255, 0.3), 0 -1px rgba(255, 255, 255, 0.3);
+  --label-shadow:
+    1px 0 rgba(255, 255, 255, 0.3), 0 1px rgba(255, 255, 255, 0.3),
+    -1px 0 rgba(255, 255, 255, 0.3), 0 -1px rgba(255, 255, 255, 0.3);
   --label-stroke: 1px rgba(255, 255, 255, 0.4);
 }
