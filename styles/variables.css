@@ -1,8 +1,8 @@
 :root {
   --main-family: Inter-Variable, sans;
   --accent-family: PressStart2P, sans;
-  --weight-header: 715;
-  --weight-text: 410;
+  --weight-header: 'wght' 715;
+  --weight-text: 'wght' 410;
   --heart-accent-color: #FF0000;
   --dark-color: #000;
   --section-bg: #fff;

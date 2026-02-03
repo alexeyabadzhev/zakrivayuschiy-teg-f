@@ -72,11 +72,10 @@
 }
 
 .card__title {
-  font-weight: var(--weight-header);
+  font-variation-settings: var(--weight-header);
   font-size: inherit;
   padding-inline: 10px;
   padding-block: 4px;
-  letter-spacing: 0.35px;
 }
 
 .card__image-zone {
@@ -84,7 +83,7 @@
   border-top: var(--outline-border);
   border-bottom: var(--outline-border);
   margin-inline: 0;
-  margin-block: 0;
+  margin-block: 0 20px;
 }
 
 .card__image {
@@ -149,11 +148,12 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
-  margin-block: 27px 25px;
+  margin-block-end: 25px;
   padding-inline: 25px;
 }
 
 .card__text {
+  font-variation-settings: var(--weight-text);
   line-height: 1.17;
 }
 
@@ -167,7 +167,6 @@
 .card__icon-button {
   background-color: transparent;
   border: 2px solid rgba(0, 0, 0, 0);
-  block-size: 34px;
   display: grid;
   align-content: center;
   transition: border 0.3s ease;
@@ -312,8 +311,6 @@
     row-gap: 8px;
     align-items: center;
     padding-block: 15px;
-    transition: box-shadow 0.3s ease;
-    transition: scale 0.5s ease-in-out;
   }
 }
 
