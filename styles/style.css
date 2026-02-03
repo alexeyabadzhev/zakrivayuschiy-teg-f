@@ -14,7 +14,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-family);
-  font-variation-settings: 'wght' var(--weight-text);
+  font-variation-settings: "wght" var(--weight-text);
   background-image: var(--background-gradient);
   background-size: cover;
   background-attachment: fixed;
@@ -136,7 +136,8 @@
   text-shadow: var(--label-shadow);
 }
 
-@supports (text-stroke: var(--label-stroke)) or (-webkit-text-stroke: var(--label-stroke)) {
+@supports (text-stroke: var(--label-stroke)) or
+  (-webkit-text-stroke: var(--label-stroke)) {
   .card__image-label {
     -webkit-text-stroke: var(--label-stroke);
     text-stroke: var(--label-stroke);
@@ -258,7 +259,7 @@
 }
 
 .button::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   transform: scaleX(0);
@@ -266,7 +267,6 @@
   z-index: -1;
   transition: transform 0.5s ease-in-out;
   transform-origin: left;
-
 }
 
 .button:hover {
@@ -333,7 +333,9 @@
 }
 
 @media (width <= 375px) {
-  padding-inline: 38px;
+  .dialog {
+    padding-inline: 38px;
+  }
 }
 
 .dialog::backdrop {
